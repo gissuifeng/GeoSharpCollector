@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AAA0C1F8-FAFE-421D-9852-5E0B93D0D107}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoSharp2018</RootNamespace>
+    <AssemblyName>GeoSharp2018</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AipSdk">
+      <HintPath>..\..\..\AipSdk.dll</HintPath>
+    </Reference>
+    <Reference Include="AutocompleteMenu">
+      <HintPath>..\..\..\..\..\winform\2017\winform\代码自动提示\AutocompleteMenu\AutocompleteMenu\bin\Debug\AutocompleteMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="CSScriptLibrary">
+      <HintPath>..\..\..\..\..\winform\2017\winform\csscriopt\cs-script\lib\Bin\NET 4.0\CSScriptLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v18.1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Dialogs.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Docs.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v18.1.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v18.1.Export">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v18.1.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v18.1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v18.1.UI, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v18.1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v18.1.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v18.1.Wizard, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraDialogs.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Images.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotSpatial.Controls">
+      <HintPath>..\..\..\..\..\winform\2017\winform\dotspatial\DotSpatial.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Data">
+      <HintPath>..\..\..\..\..\winform\2017\winform\dotspatial\DotSpatial.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Data.Forms">
+      <HintPath>..\..\..\..\..\winform\2017\winform\dotspatial\DotSpatial.Data.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Positioning">
+      <HintPath>..\..\..\..\..\winform\2017\winform\dotspatial\DotSpatial.Positioning.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Positioning.Design">
+      <HintPath>..\..\..\..\..\winform\2017\winform\dotspatial\DotSpatial.Positioning.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Positioning.Forms">
+      <HintPath>..\..\..\..\..\winform\2017\winform\dotspatial\DotSpatial.Positioning.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Projections">
+      <HintPath>..\..\..\..\..\winform\2017\winform\dotspatial\DotSpatial.Projections.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Projections.Forms">
+      <HintPath>..\..\..\..\..\winform\2017\winform\dotspatial\DotSpatial.Projections.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Symbology">
+      <HintPath>..\..\..\..\..\winform\2017\winform\dotspatial\DotSpatial.Symbology.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Symbology.Forms">
+      <HintPath>..\..\..\..\..\winform\2017\winform\dotspatial\DotSpatial.Symbology.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Topology">
+      <HintPath>..\..\..\..\..\winform\2017\winform\dotspatial\DotSpatial.Topology.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\thirdparty\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemForms\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemForms\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemForms\RegForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemForms\RegForm.Designer.cs">
+      <DependentUpon>RegForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemForms\SkinsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemForms\SkinsForm.Designer.cs">
+      <DependentUpon>SkinsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\BaiduDegeocodingAdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\BaiduDegeocodingAdForm.Designer.cs">
+      <DependentUpon>BaiduDegeocodingAdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\BaiduDegeocodingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\BaiduDegeocodingForm.Designer.cs">
+      <DependentUpon>BaiduDegeocodingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\BaiduGeocodingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\BaiduGeocodingForm.Designer.cs">
+      <DependentUpon>BaiduGeocodingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\CoordTrans\Baidu2GaodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\CoordTrans\Baidu2GaodeForm.Designer.cs">
+      <DependentUpon>Baidu2GaodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\CoordTrans\Baidu2WGS84Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\CoordTrans\Baidu2WGS84Form.Designer.cs">
+      <DependentUpon>Baidu2WGS84Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\CoordTrans\Gaode2BaiduForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\CoordTrans\Gaode2BaiduForm.Designer.cs">
+      <DependentUpon>Gaode2BaiduForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\CoordTrans\WGS842BaiduForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\CoordTrans\WGS842BaiduForm.Designer.cs">
+      <DependentUpon>WGS842BaiduForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\CoordTrans\WGS842GaodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\CoordTrans\WGS842GaodeForm.Designer.cs">
+      <DependentUpon>WGS842GaodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\ExtentLibForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\ExtentLibForm.Designer.cs">
+      <DependentUpon>ExtentLibForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\ForecastAllColleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\ForecastAllColleForm.Designer.cs">
+      <DependentUpon>ForecastAllColleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\ForecastColleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\ForecastColleForm.Designer.cs">
+      <DependentUpon>ForecastColleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\CoordTrans\Gaode2WGS84Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\CoordTrans\Gaode2WGS84Form.Designer.cs">
+      <DependentUpon>Gaode2WGS84Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\GaodeAOIGetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\GaodeAOIGetForm.Designer.cs">
+      <DependentUpon>GaodeAOIGetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\GaodeDegeocodingAdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\GaodeDegeocodingAdForm.Designer.cs">
+      <DependentUpon>GaodeDegeocodingAdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\GaodeDegeocodingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\GaodeDegeocodingForm.Designer.cs">
+      <DependentUpon>GaodeDegeocodingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\GaodeGeocodingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\GaodeGeocodingForm.Designer.cs">
+      <DependentUpon>GaodeGeocodingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\GaodePOIGetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\GaodePOIGetForm.Designer.cs">
+      <DependentUpon>GaodePOIGetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\GaodePOITypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\GaodePOITypeForm.Designer.cs">
+      <DependentUpon>GaodePOITypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\LexerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\LexerForm.Designer.cs">
+      <DependentUpon>LexerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\PopflowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\PopflowForm.Designer.cs">
+      <DependentUpon>PopflowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\TenxunGeocodingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\TenxunGeocodingForm.Designer.cs">
+      <DependentUpon>TenxunGeocodingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\TenxunQianxiBatchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\TenxunQianxiBatchForm.Designer.cs">
+      <DependentUpon>TenxunQianxiBatchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\TenxunQianxiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\TenxunQianxiForm.Designer.cs">
+      <DependentUpon>TenxunQianxiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\TexerTxtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\TexerTxtForm.Designer.cs">
+      <DependentUpon>TexerTxtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\TrafficSituationGetByRecForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\TrafficSituationGetByRecForm.Designer.cs">
+      <DependentUpon>TrafficSituationGetByRecForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\WalkRouteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\WalkRouteForm.Designer.cs">
+      <DependentUpon>WalkRouteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolForms\Zhihu_DataClearForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolForms\Zhihu_DataClearForm.Designer.cs">
+      <DependentUpon>Zhihu_DataClearForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UtilClass\CoordinateTranslatorClass.cs" />
+    <Compile Include="UtilClass\ExtentCoord.cs" />
+    <Compile Include="UtilClass\FolderNameEditor.cs" />
+    <Compile Include="UtilClass\MySyntaxHighlightServiceCSharp.cs" />
+    <Compile Include="UtilClass\RegClass.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SystemForms\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemForms\RegForm.resx">
+      <DependentUpon>RegForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemForms\SkinsForm.resx">
+      <DependentUpon>SkinsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\BaiduDegeocodingAdForm.resx">
+      <DependentUpon>BaiduDegeocodingAdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\BaiduDegeocodingForm.resx">
+      <DependentUpon>BaiduDegeocodingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\BaiduGeocodingForm.resx">
+      <DependentUpon>BaiduGeocodingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\CoordTrans\Baidu2GaodeForm.resx">
+      <DependentUpon>Baidu2GaodeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\CoordTrans\Baidu2WGS84Form.resx">
+      <DependentUpon>Baidu2WGS84Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\CoordTrans\Gaode2BaiduForm.resx">
+      <DependentUpon>Gaode2BaiduForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\CoordTrans\WGS842BaiduForm.resx">
+      <DependentUpon>WGS842BaiduForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\CoordTrans\WGS842GaodeForm.resx">
+      <DependentUpon>WGS842GaodeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\ExtentLibForm.resx">
+      <DependentUpon>ExtentLibForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\ForecastAllColleForm.resx">
+      <DependentUpon>ForecastAllColleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\ForecastColleForm.resx">
+      <DependentUpon>ForecastColleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\CoordTrans\Gaode2WGS84Form.resx">
+      <DependentUpon>Gaode2WGS84Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\GaodeAOIGetForm.resx">
+      <DependentUpon>GaodeAOIGetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\GaodeDegeocodingAdForm.resx">
+      <DependentUpon>GaodeDegeocodingAdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\GaodeDegeocodingForm.resx">
+      <DependentUpon>GaodeDegeocodingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\GaodeGeocodingForm.resx">
+      <DependentUpon>GaodeGeocodingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\GaodePOIGetForm.resx">
+      <DependentUpon>GaodePOIGetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\GaodePOITypeForm.resx">
+      <DependentUpon>GaodePOITypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\LexerForm.resx">
+      <DependentUpon>LexerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\PopflowForm.resx">
+      <DependentUpon>PopflowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\TenxunGeocodingForm.resx">
+      <DependentUpon>TenxunGeocodingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\TenxunQianxiBatchForm.resx">
+      <DependentUpon>TenxunQianxiBatchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\TenxunQianxiForm.resx">
+      <DependentUpon>TenxunQianxiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\TexerTxtForm.resx">
+      <DependentUpon>TexerTxtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\TrafficSituationGetByRecForm.resx">
+      <DependentUpon>TrafficSituationGetByRecForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\WalkRouteForm.resx">
+      <DependentUpon>WalkRouteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolForms\Zhihu_DataClearForm.resx">
+      <DependentUpon>Zhihu_DataClearForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UserControl\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
