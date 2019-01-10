@@ -1,2 +1,5 @@
 # GeoSharpCollector
-A free software for geo data collection for internet.
+A free software for geodata collection from internet.
+
+
+GeoSharp for collector in a powerful tools set for geodata collection. It also including coordinate conversion among several types of coordinates used in China. 
