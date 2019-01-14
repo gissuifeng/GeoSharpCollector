@@ -8,6 +8,6 @@ There are many data collection funcitons you can leverage.Such as
 
 1、Collecting any type of poi data from AMap. Figure.1 shows all restaurants in Jinan city in China, which a point represents one restaurant acoordingly in real world.
 
-https://github.com/gissuifeng/GeoSharpCollector/blob/master/img_folder/Figure%201.png
+[image](https://github.com/gissuifeng/GeoSharpCollector/blob/master/img_folder/Figure%201.png)
 
 
